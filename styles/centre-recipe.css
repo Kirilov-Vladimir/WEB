@@ -1,0 +1,43 @@
+.centre-recipe{
+    line-height: 1.5;
+    margin: 120px;
+}
+
+.centre-recipe__link{
+    display: grid;
+    color: #4A525A;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.centre-recipe__img-text-link{
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #FDB100;    
+    border-radius: 0px 5px 5px 0px;
+    padding: 8px;
+    position: relative;
+    top: -80px;
+    max-width: 100px;
+    text-align: center;
+    border: none;
+}
+
+.centre-recipe__ink-text{
+    font-size: 18px;
+    font-family: 400;
+}
+
+.centre-recipe__text-heading{
+    font-size: 42px;
+    color: #25292D;
+    font-family: 700;
+}
+
+.centre-recipe__img-text{
+    display: flex;
+}
+
+.centre-recipe__ink-text-emotion{
+    display: flex;
+    justify-content: flex-end;
+}

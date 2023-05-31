@@ -1,0 +1,28 @@
+.footer{    
+    background-color: #FBF9F4;
+    color: #4A525A;;
+}
+
+.footer__text{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 120px;
+}
+
+.footer__logo-header{
+    display: flex;
+    align-items: center;
+    color: #FDB100;
+    font-weight: 700;
+    font-size: 32px;    
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.footer__logo{
+    display: flex;
+    font-size: 20px;    
+    align-items: center;
+    font-weight: 500;
+}

@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta content="width=device-width" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+    <title>Recipes</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/top.css" />
+    <link rel="stylesheet" type="text/css" href="styles/centre-tegs.css" />
+    <link rel="stylesheet" type="text/css" href="styles/centre-recipe.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bottom.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/form-profil.css" />
+    <link rel="stylesheet" type="text/css" href="styles/form-login.css" />
+    <link rel="stylesheet" type="text/css" href="styles/form-registration.css" />
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a class="logo">Recipes</a>
+            <a class="header__logo" href="index.html">Recipes</a>
             <nav class="nav">
-                <ul class="nav__list">
+                <ul class="nav__list-header">
                     <li class="nav__list-item">
                         <a class="nav__list-link">Главная</a>
                     </li>
@@ -27,7 +36,7 @@
                     </li>
                 </ul>
             </nav>
-            <a class="login"><img src="img/login_ic.svg">Вход</a>
+            <a class="header__login" href="#login"><img src="img/login_ic.svg">Войти</a>
         </header>
         <main>
             <section class="top">
@@ -35,59 +44,79 @@
                     <h1 class="top__text-heading">Готовь и делись рецептами</h1>
                     <p class="top__text-paragraph">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в
                         одном месте.</p>
-                    <a class="top__button"><span class="top__button-text">Добавить рецепт</span></a>
-                    <a class="top__button-enter"><span class="top__button-text">Войти</span></a>
-                    <img class="top__img" src="img/header_img.png">
+                    <div class="top__button">
+                        <a class="top__button-add" href="#profil">+ Добавить рецепт</a>
+                        <a class="top__button-enter" href="#login">Войти</a>
+                    </div>
                 </div>
+                <img class="top__img" src="img/header_img.png">
             </section>
             <section class="centre-tegs">
-                <h1 class="centre-tegs__text-heading">Умная сортировка по тегам</h1>
-                <p class="centre-tegs__text-paragraph">Добавляй рецепты и указывай наиболее популярные теги. Это
-                    позволит быстро находить любые категории.</p>
+                <div class="centre-tegs__text">
+                    <h1 class="centre-tegs__text-heading">Умная сортировка по тегам</h1>
+                    <p class="centre-tegs__text-paragraph">Добавляй рецепты и указывай наиболее популярные теги. Это
+                        позволит быстро находить любые категории.</p>
+                </div>
                 <nav class="nav">
                     <ul class="nav__list-tegs">
                         <li class="nav__list-tegs-item">
-                            <a class="nav__list-tegs-link"><img src="img/simple_ic.svg">
-                                <h1 class="nav__list-tegs-link-text-heading">Простые блюда</h1>
-                                <p class="nav__list-tegs-link-text-paragraph">Время приготвления таких блюд не более 1
-                                    часа</p>
-                            </a>
+                            <div class="nav__list-tegs-link">
+                                <a class="nav__list-tegs-link-button"><img src="img/simple_ic.svg">
+                                    <h1 class="nav__list-tegs-link-text-heading">Простые блюда</h1>
+                                    <p class="nav__list-tegs-link-text-paragraph">Время приготвления таких блюд не более
+                                        1
+                                        часа</p>
+                                </a>
+                            </div>
                         </li>
                         <li class="nav__list-tegs-item">
-                            <a class="nav__list-tegs-link"><img src="img/kids_ic.svg">
-                                <h1 class="nav__list-tegs-link-text-heading">Детское</h1>
-                                <p class="nav__list-tegs-link-text-paragraph">Самые полезные блюда которые можно детям
-                                    любого возраста</p>
-                            </a>
+                            <div class="nav__list-tegs-link">
+                                <a class="nav__list-tegs-link-button"><img src="img/kids_ic.svg">
+                                    <h1 class="nav__list-tegs-link-text-heading">Детское</h1>
+                                    <p class="nav__list-tegs-link-text-paragraph">Самые полезные блюда которые можно
+                                        детям
+                                        любого возраста</p>
+                                </a>
+                            </div>
                         </li>
                         <li class="nav__list-tegs-item">
-                            <a class="nav__list-tegs-link"><img src="img/chief_ic.svg">
-                                <h1 class="nav__list-tegs-link-text-heading">От шеф-поваров</h1>
-                                <p class="nav__list-tegs-link-text-paragraph">Требуют умения, времени и терпения, зато
-                                    как в ресторане</p>
-                            </a>
+                            <div class="nav__list-tegs-link">
+                                <a class="nav__list-tegs-link-button"><img src="img/chief_ic.svg">
+                                    <h1 class="nav__list-tegs-link-text-heading">От шеф-поваров</h1>
+                                    <p class="nav__list-tegs-link-text-paragraph">Требуют умения, времени и терпения,
+                                        зато
+                                        как в ресторане</p>
+                                </a>
+                            </div>
                         </li>
                         <li class="nav__list-tegs-item">
-                            <a class="nav__list-tegs-link"><img src="img/holiday_ic.svg">
-                                <h1 class="nav__list-tegs-link-text-heading">На праздник</h1>
-                                <p class="nav__list-tegs-link-text-paragraph">Чем удивить гостей, чтобы все были сыты за
-                                    праздничным столом</p>
-                            </a>
+                            <div class="nav__list-tegs-link">
+                                <a class="nav__list-tegs-link-button"><img src="img/holiday_ic.svg">
+                                    <h1 class="nav__list-tegs-link-text-heading">На праздник</h1>
+                                    <p class="nav__list-tegs-link-text-paragraph">Чем удивить гостей, чтобы все были
+                                        сыты за
+                                        праздничным столом</p>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
             </section>
             <section class="centre-recipe">
                 <a class="centre-recipe__link">
-                    <img class="centre-recipe__img" src="img/section1_img.png">
-                    <p class="centre-recipe__img-text">@glazest</p>
+                    <div class="centre-recipe__img">
+                        <img class="centre-recipe__img-img" src="img/section1_img.png">
+                        <button class="centre-recipe__img-text-link">@glazest</button>
+                    </div>
                     <div class="centre-recipe__ink-text">
-                        <img class="centre-recipe__img-text" src="img/heart_ic.svg">
-                        <!--<p class="centre_recipe_link_text_img"></p>-->
-                        <img class="centre-recipe__img-text" src="img/timer_ic.svg">
-                        <!--<p class="centre_recipe_link_text_img"></p>-->
-                        <img class="centre-recipe__img-text" src="img/everyday_recipe_ic.svg">
-                        <h1 class="centre-recipe__text">Тыквенный супчик на кокосовом молоке</h1>
+                        <div class="centre-recipe__ink-text-emotion">
+                            <img class="centre-recipe__img-text" src="img/heart_ic.svg">
+                            <p class="centre-recipe__link-text-img">---</p>
+                            <img class="centre-recipe__img-text" src="img/timer_ic.svg">
+                            <p class="centre-recipe__link-text-img">---</p>
+                        </div>
+                        <img class="centre-recipe__img-text-recipe" src="img/everyday_recipe_ic.svg">
+                        <h1 class="centre-recipe__text-heading">Тыквенный супчик На кокосовом молоке</h1>
                         <p class="centre-recipe__text">Если у вас осталась тыква, и вы не знаете что с ней сделать, то
                             это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!
                         </p>
@@ -95,33 +124,91 @@
                 </a>
             </section>
             <section class="bottom">
-                <h1 class="bottom__text">Поиск рецептов</h1>
-                <p class="bottom__text">Введите примерное название блюда, а мы по тегам найдем его</p>
-                <input class="bottom__input" type="text">
-                <a class="bottom__input">
-                    <span class="bottom__input-text">Поиск</span>
-                </a>
-                <nav class="nav">
+                <div class="bottom__text">
+                    <h1 class="bottom__text-heading">Поиск рецептов</h1>
+                    <p class="bottom__text">Введите примерное название блюда, а мы по тегам найдем его</p>
+                </div>
+                <div class="bottom__search">
+                    <input class="bottom__input-search" type="text" placeholder="Название блюда....">
+                    <a class="bottom__input-buttom">Поиск </a>
+                </div>
+                <div class="nav">
                     <ul class="nav__bottom-list-tegs">
                         <li class="nav__bottom-list-tegs-item">
                             <a class="nav__bottom-list-tegs-link">Мясо</a>
                         </li>
                         <li class="nav__bottom-list-tegs-item">
-                            <a class="nav-bbottom-list-tegs-link">Деликатесы</a>
+                            <a class="nav__bottom-list-tegs-link">Деликатесы</a>
                         </li>
-                        <li class="nav__bbottom-list-tegs-item">
-                            <a class="nav__bbottom-list-tegs-link">Пироги</a>
+                        <li class="nav__bottom-list-tegs-item">
+                            <a class="nav__bottom-list-tegs-link">Пироги</a>
                         </li>
-                        <li class="nav__bbottom-list-tegs-item">
-                            <a class="nav__bbottom-list-tegs-link">Рыба</a>
+                        <li class="nav__bottom-list-tegs-item">
+                            <a class="nav__bottom-list-tegs-link">Рыба</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </section>
+
+            <div class="profil" id="profil">
+                <form class="profil__form">
+                    <a href="#close" class="close"><img src="img/close.svg"></a>
+                    <h1 class="profil-form-text-heading">Войдите в профиль</h1>
+                    <p class="profil-form-text-paragaph">Добавлять рецепты могут только зарегистрированные пользователи.
+                    </p>
+                    <div class="profil__button">
+                        <a class="profil__login" href="#login">Войти</a>
+                        <a class="profil__registration" href="#registration">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+            <div class="registration" id="registration">
+                <form class="registration__form">
+                    <a href="#close" class="close"><img src="img/close.svg"></a>
+                    <h1 class="registration-form-text-heading">Регистрация</h1>
+                    <div class="registration__input">
+                        <input class="registration__form-text-input" type="text" placeholder="Имя">
+                        <input class="registration__form-text-input" type="text" placeholder="Логин">
+                        <div class="registration__input-password">
+                            <input class="registration__button-input-password" type="password" placeholder="Пароль">
+                            <input class="registration__button-input-password" type="password"
+                                placeholder="Повторите пароль">
+                        </div>
+                        <p class="registration__input-password-text">Минимум 8 символов</p>
+                    </div>
+                    <div class="registration__button">
+                        <a class="registration__login-button">Зарегистрироваться</a>
+                        <a class="registration__cancel-button" href="#close">Отмена</a>
+                    </div>
+                    <a class="registration__login" href="#login">
+                        <p class="registration__login-text">У меня уже есть аккаунт</p>
+                    </a>
+                </form>
+            </div>
+            <div class="login" id="login">
+                <form class="login__form">
+                    <a href="#close" class="close"><img src="img/close.svg"></a>
+                    <h1 class="login-form-text-heading">Войти</h1>
+                    <div class="login__input">
+                        <input class="login__input-text" type="text" placeholder="Логин">
+                        <input class="login__input-text" type="password" placeholder="Пароль">
+                    </div>
+                    <div class="login__button">
+                        <a class="login__login-button">Войти</a>
+                        <a class="login__cancel-button" href="#close">Отмена</a>
+                    </div>
+                    <a class="login__registration" href="#registration">
+                        <p class="login__registration-text">У меня ещё нет аккаунта</p>
+                    </a>
+                </form>
+            </div>
+
         </main>
         <footer class="footer">
-            <a class="footer__logo">Recipes</a>
-            <p class="footer__logofooter">© Recipes 2021</p>
+            <div class="footer__text">
+                <a class="footer__logo-header" href="index.html">Recipes</a>
+                <p class="footer__logo">© Recipes 2021</p>
+            </div>
         </footer>
     </div>
 </body>
